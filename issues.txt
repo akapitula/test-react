@@ -1,0 +1,32 @@
+ISSUE 1
+
+Create an importer for characters
+I realized that create the characters using the form is incredibly slow and 
+error prone, so we'd need to be able to create characters massively. I think 
+using a CSV file where we can have all the fields at once speed our job up and 
+does not seem like a very time consuming task. Each column represents a field in
+the database, and each row a character to be created.
+The interface doesn't to be very nice at first, it is more important to be done
+right now, so we can go on with all the data importation.
+However an essential feature should be to see the result of the import by row.
+If everything goes fine we can show a link to the created character, otherwise
+show what error occurred during the creation. This way we can create a new file
+with only the failed rows, fix them and upload them again until every character
+is correctly created.
+
+ISSUE 2
+
+We want to change the UI. The teach team has decided to use React.js for the 
+views.
+We want the app to be a single page application. 
+On this first step we want start with the Houses CRUD. Develop the Houses list
+the House details and the creation/edit form as react components. Note that as
+a single page application would be greate don't have to reload the pages while
+navigating through the houses CRUD pages. Please do it considering that it's a
+view that will be redisegned soon.
+
+In the Houses creation/edit form change the 'Sigil url' field for a react
+component that perform a images search (using for example [Pixabay API]
+(https://pixabay.com/api/docs)), display the first 4 results, and give the user
+the ability to choose and save an image.
+
